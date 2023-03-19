@@ -16,9 +16,7 @@ const App = () => {
       </div>
       {/* career */}
       <div className="h-[786px] bg-white flex justify-around items-center">
-        <div>
-          <img src={People} alt="People" />
-        </div>
+        <img src={People} alt="People" className="w-[554px]" />
         <div className="w-[595px] text-black">
           <h1 className="uppercase font-bold text-5xl mb-4">
             your career is in your hands
@@ -48,7 +46,9 @@ const App = () => {
       <div className="h-[786px] flex items-center relative">
         <div className="w-[694px] h-full bg-[url('./assets/statsBackground.png')] bg-cover bg-center flex items-center justify-center">
           <div className=" w-[570px]">
-            <h1 className="font-bold text-5xl mb-4">USE YOUR STATS TO MAKE MOVES</h1>
+            <h1 className="font-bold text-5xl mb-4">
+              USE YOUR STATS TO MAKE MOVES
+            </h1>
             <p className="text-xl font-normal">
               Figma files can also be downloaded from our store. These files
               include the latest Figma features and are synced with the Webflow

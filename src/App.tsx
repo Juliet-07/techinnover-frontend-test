@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import People from "./assets/careerPeople.png";
+import Stats from "./assets/frame.png";
+import Background from "./assets/statsBackground.png"
 
 const App = () => {
   return (
@@ -44,11 +46,13 @@ const App = () => {
       </div>
       {/* stats */}
       <div className="h-[786px] flex items-center text-white relative">
-        <div className="w-[694px] h-full bg-yellow-500">
+        <div className="w-[694px] h-full bg-[url('./assets/statsBackground.png')] bg-cover bg-center">
           your stat to make a move
         </div>
-        <div className="relative">
-          <div className="w-[558px] h-[512px] bg-white absolute left-2 "></div>
+        <div className="relative pt-32 p-20 bg-black h-full">
+          <div className="w-[558px] h-[512px] bg-[#1A1D1F] absolute left-24 top-24 flex items-center justify-center">
+            <img src={Stats} />
+          </div>
           <div className="w-[558px] h-[504px] bg-[#e1f16b] "></div>
         </div>
       </div>

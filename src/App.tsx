@@ -145,23 +145,38 @@ const App = () => {
           the latest Figma features and are synced with the Webflow template.
         </div>
         <div className="w-full my-10">
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-5 gap-4 mx-10">
             <div className="w-[196px] h-[196px] mx-4 relative">
               <img src={Wizkid} alt="wizkid" />
             </div>
             <div className="w-[220px] h-[220px]">
-              <img src={Tiwa} alt="tiwa" className="rounded-full" />
+              {/* <img src={Tiwa} alt="tiwa" className="rounded-full" /> */}
             </div>
             <div className="w-[227px] h-[284px]">
+              <img src={Tiwa} alt="tiwa" className="rounded-full" />
+            </div>
+            <div className="w-[220px] h-[220px]">
+              {/* <img src={Tiwa} alt="tiwa" className="rounded-full" /> */}
+            </div>
+            <div className="w-[220px] h-[220px]">
               <img src={Flower} alt="flower" />
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-20">
+          <div className="grid grid-cols-5 gap-4 mx-10">
             <div className="w-[196px] h-[196px]">
-              <img src={Burna} alt="burna-boy" />
+              {/* <img src={Burna} alt="burna-boy" /> */}
             </div>
             <div className="w-[220px] h-[220px]">
+              <img src={Burna} alt="burna-boy" />
+            </div>
+            <div className="w-[196px] h-[196px]">
+              {/* <img src={Burna} alt="burna-boy" /> */}
+            </div>
+            <div className="w-[196px] h-[196px]">
               <img src={Boy} alt="boy" />
+            </div>
+            <div className="w-[220px] h-[220px]">
+              {/* <img src={Burna} alt="burna-boy" /> */}
             </div>
           </div>
         </div>

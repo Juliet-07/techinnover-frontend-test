@@ -20,7 +20,7 @@ const App = () => {
         <div className="w-[319px] md:w-[716px] md:ml-14">
           <h1 className="uppercase font-bold text-2xl md:text-6xl">
             an innovative platform that{" "}
-            <font color="#E1F16B">supports artists.</font>
+            <span className="text-[#E1F16B]">supports artists.</span>
           </h1>
           <p className="w-[325px] md:w-[507px] text-sm md:text-xl my-5 md:my-10">
             Figma files can also be downloaded from our store. These files
@@ -136,7 +136,8 @@ const App = () => {
       {/* fanbase */}
       <div className="w-full flex flex-col items-center justify-center">
         <div className="w-[665px] h-[118px] uppercase font-bold text-5xl  mt-20 text-white text-center">
-          join top artists, build your <font color="#E1F16B">fanbase</font>
+          join top artists, build your{" "}
+          <span className="text-[#E1F16B]">fanbase</span>
         </div>
         <div className="w-[507px] h-[64px] text-[#6f767e] font-normal text-center text-base">
           {" "}

@@ -1,18 +1,10 @@
-import React, { Fragment, useState } from "react";
-import { Menu, Transition } from "@headlessui/react";
-import { AiOutlineClose, AiOutlineMenu, AiFillCar } from "react-icons/ai";
-import { BiChevronDown } from "react-icons/bi";
-import { FaClinicMedical, FaHotel } from "react-icons/fa";
-import { BsBriefcaseFill } from "react-icons/bs";
-import { GiAllSeeingEye } from "react-icons/gi";
+import React, { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
   const handleNav = () => {
     setNav(!nav);
-  };
-  const classNames = (...classes) => {
-    return classes.filter(Boolean).join(" ");
   };
   return (
     <div className="flex items-center justify-around py-4 w-full h-20">

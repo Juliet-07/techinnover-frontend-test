@@ -135,11 +135,11 @@ const App = () => {
       </div>
       {/* fanbase */}
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="w-[665px] h-[118px] uppercase font-bold text-5xl  mt-20 text-white text-center">
+        <div className="w-[358px] md:w-[665px] h-[96px] md:h-[118px] uppercase font-bold text-2xl md:text-5xl mt-20 text-white md:text-center">
           join top artists, build your{" "}
           <span className="text-[#E1F16B]">fanbase</span>
         </div>
-        <div className="w-[507px] h-[64px] text-[#6f767e] font-normal text-center text-base">
+        <div className="w-[342px] md:w-[507px] h-[32px] md:h-[64px] text-[#6f767e] font-normal md:text-center text-xs md:text-base">
           {" "}
           Figma files can also be downloaded from our store. These files include
           the latest Figma features and are synced with the Webflow template.

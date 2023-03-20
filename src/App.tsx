@@ -10,8 +10,11 @@ import Flower from "./assets/flower.png";
 import Woman from "./assets/hot-woman.png";
 import Davido from "./assets/davido.png";
 import Footer from "./components/Footer";
+import { useMediaQuery } from "react-responsive";
+import "./fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf";
 
 const App = () => {
+  const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
   return (
     <>
       <Navbar />
@@ -144,43 +147,74 @@ const App = () => {
           Figma files can also be downloaded from our store. These files include
           the latest Figma features and are synced with the Webflow template.
         </div>
-        <div className="w-full my-10">
-          <div className="grid grid-cols-5 gap-4 mx-10">
-            <div className="w-[196px] h-[196px] mx-4 relative">
+      </div>
+      {isMobile ? (
+        <div className="my-10 p-4">
+          <div className="flex justify-between">
+            <div className="w-[116.18px] h-[116.18px]">
               <img src={Wizkid} alt="wizkid" />
             </div>
-            <div className="w-[220px] h-[220px]">
-              {/* <img src={Tiwa} alt="tiwa" className="rounded-full" /> */}
-            </div>
-            <div className="w-[227px] h-[284px]">
+            <div className="w-[134.55px] h-[168.34px]">
               <img src={Tiwa} alt="tiwa" className="rounded-full" />
             </div>
-            <div className="w-[220px] h-[220px]">
-              {/* <img src={Tiwa} alt="tiwa" className="rounded-full" /> */}
-            </div>
-            <div className="w-[220px] h-[220px]">
-              <img src={Flower} alt="flower" />
-            </div>
           </div>
-          <div className="grid grid-cols-5 gap-4 mx-10">
-            <div className="w-[196px] h-[196px]">
-              {/* <img src={Burna} alt="burna-boy" /> */}
-            </div>
-            <div className="w-[220px] h-[220px]">
-              <img src={Burna} alt="burna-boy" />
-            </div>
-            <div className="w-[196px] h-[196px]">
-              {/* <img src={Burna} alt="burna-boy" /> */}
-            </div>
-            <div className="w-[196px] h-[196px]">
+          <div className="flex items-center justify-center my-2">
+            <img
+              src={Burna}
+              alt="burna-boy"
+              className="w-[130.41px] h-[130.41px] "
+            />
+          </div>
+          <div className="flex justify-between">
+            <div className="w-[116.18px] h-[116.18px]">
               <img src={Boy} alt="boy" />
             </div>
-            <div className="w-[220px] h-[220px]">
-              {/* <img src={Burna} alt="burna-boy" /> */}
+            <div className="w-[134.55px] h-[168.34px]">
+              <img src={Flower} alt="flower" className="rounded-full" />
             </div>
           </div>
         </div>
-      </div>
+      ) : (
+        <>
+          <div className="w-full my-10">
+            <div className="grid grid-cols-5 gap-4 mx-10">
+              <div className="w-[196px] h-[196px] mx-4 relative">
+                <img src={Wizkid} alt="wizkid" />
+              </div>
+              <div className="w-[220px] h-[220px]">
+                {/* <img src={Tiwa} alt="tiwa" className="rounded-full" /> */}
+              </div>
+              <div className="w-[227px] h-[284px]">
+                <img src={Tiwa} alt="tiwa" className="rounded-full" />
+              </div>
+              <div className="w-[220px] h-[220px]">
+                {/* <img src={Tiwa} alt="tiwa" className="rounded-full" /> */}
+              </div>
+              <div className="w-[220px] h-[220px]">
+                <img src={Flower} alt="flower" />
+              </div>
+            </div>
+            <div className="grid grid-cols-5 gap-4 mx-10">
+              <div className="w-[196px] h-[196px]">
+                {/* <img src={Burna} alt="burna-boy" /> */}
+              </div>
+              <div className="w-[220px] h-[220px]">
+                <img src={Burna} alt="burna-boy" />
+              </div>
+              <div className="w-[196px] h-[196px]">
+                {/* <img src={Burna} alt="burna-boy" /> */}
+              </div>
+              <div className="w-[196px] h-[196px]">
+                <img src={Boy} alt="boy" />
+              </div>
+              <div className="w-[220px] h-[220px]">
+                {/* <img src={Burna} alt="burna-boy" /> */}
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+
       <Footer />
     </>
   );

@@ -7,7 +7,7 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className="flex items-center justify-around py-4 w-full h-20">
+    <div className="flex items-center justify-between px-4 md:px-0 md:justify-around py-4 w-full h-20">
       <div className="uppercase text-[#E1F16B] font-bold text-xl">logo</div>
       <div className="hidden md:flex text-white font-normal text-base">
         <p className="mr-20">Features</p>

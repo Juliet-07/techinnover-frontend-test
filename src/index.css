@@ -11,3 +11,13 @@
     background-color: #1a1d1f;
   }
 }
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("./fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf")
+    format("truetype");
+}
+
+.footer-font {
+  font-family: "Integral CF";
+}

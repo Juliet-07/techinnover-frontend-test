@@ -17,7 +17,7 @@ const Footer = () => {
               </h1>
               <p className="text-xs">Short sentence here</p>
             </div>
-            <h1 className="font-bold text-xl uppercase my-10">
+            <h1 className="font-bold text-xl uppercase my-10 footer-font">
               connect with us
             </h1>
             <div className="flex">
@@ -73,7 +73,7 @@ const Footer = () => {
         <div className="w-full h-[305px] text-white flex flex-col px-10 py-14">
           <div className="flex items-center justify-between mb-4">
             <div className="flex flex-col">
-              <h1 className="uppercase text-xl font-bold mb-4">
+              <h1 className="uppercase text-xl font-bold mb-4 footer-font">
                 short line about us
                 <br />
                 three words here
@@ -81,7 +81,7 @@ const Footer = () => {
               <p className="text-xs">Short sentence here</p>
             </div>
             <div className="flex">
-              <h1 className="font-bold text-xl uppercase mx-10">
+              <h1 className="font-bold text-xl uppercase mx-10 footer-font">
                 connect
                 <br />
                 with

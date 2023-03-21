@@ -11,7 +11,7 @@ import Woman from "./assets/hot-woman.png";
 import Davido from "./assets/davido.png";
 import Footer from "./components/Footer";
 import { useMediaQuery } from "react-responsive";
-import "./fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf";
+// import "./fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf";
 
 const App = () => {
   const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
@@ -21,7 +21,7 @@ const App = () => {
       {/* innovative plan */}
       <div className="h-[80vh] md:h-[70vh] text-white flex flex-col md:flex-row items-center justify-center md:justify-between">
         <div className="w-[319px] md:w-[716px] md:ml-14">
-          <h1 className="uppercase font-bold text-2xl md:text-6xl">
+          <h1 className="uppercase font-bold text-2xl md:text-6xl large-font">
             an innovative platform that{" "}
             <span className="text-[#E1F16B]">supports artists.</span>
           </h1>
@@ -138,11 +138,11 @@ const App = () => {
       </div>
       {/* fanbase */}
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="w-[358px] md:w-[665px] h-[96px] md:h-[118px] uppercase font-bold text-2xl md:text-5xl mt-20 text-white md:text-center">
+        <div className="w-[358px] md:w-[665px] h-[96px] md:h-[118px] uppercase font-bold text-2xl md:text-5xl mt-20 text-white md:text-center large-font">
           join top artists, build your{" "}
           <span className="text-[#E1F16B]">fanbase</span>
         </div>
-        <div className="w-[342px] md:w-[507px] h-[32px] md:h-[64px] text-[#6f767e] font-normal md:text-center text-xs md:text-base">
+        <div className="w-[342px] md:w-[507px] h-[32px] md:h-[64px] text-[#6f767e] font-normal md:text-center text-xs md:text-base text-font">
           {" "}
           Figma files can also be downloaded from our store. These files include
           the latest Figma features and are synced with the Webflow template.
@@ -178,8 +178,8 @@ const App = () => {
         <>
           <div className="w-full my-10">
             <div className="grid grid-cols-5 gap-4 mx-10">
-              <div className="w-[196px] h-[196px] mx-4 relative">
-                <img src={Wizkid} alt="wizkid" />
+              <div className="w-[196px] h-[196px] mx-4 bg-[url('./assets/wizkid.png')] bg-cover bg-center relative">
+                <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2] rounded-full" />
               </div>
               <div className="w-[220px] h-[220px]">
                 {/* <img src={Tiwa} alt="tiwa" className="rounded-full" /> */}
@@ -190,8 +190,8 @@ const App = () => {
               <div className="w-[220px] h-[220px]">
                 {/* <img src={Tiwa} alt="tiwa" className="rounded-full" /> */}
               </div>
-              <div className="w-[220px] h-[220px]">
-                <img src={Flower} alt="flower" />
+              <div className="flex items-center justify-center w-[220px] h-[220px] bg-[url('./assets/flower.png')] bg-cover bg-center relative">
+                <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2] rounded-full" />
               </div>
             </div>
             <div className="grid grid-cols-5 gap-4 mx-10">

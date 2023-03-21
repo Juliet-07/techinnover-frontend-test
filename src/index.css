@@ -17,7 +17,24 @@
   src: url("./fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf")
     format("truetype");
 }
+@font-face {
+  font-family: "Product Sans";
+  src: url("./fonts/product-sans/Product\ Sans\ Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Druk Wide";
+  src: url("./fonts/Druk_Collection/Druk\ Text\ Wide\ Family/.ttf")
+    format("truetype");
+}
 
 .footer-font {
   font-family: "Integral CF";
+}
+
+.large-font {
+  font-family: "Druk Wide";
+}
+
+.text-font {
+  font-family: "Product Sans";
 }
